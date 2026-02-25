@@ -1,0 +1,10 @@
+./aleae lambda_m1.in lambda.r 200 1000.0 0
+./aleae lambda_m2.in lambda.r 200 1000.0 0
+./aleae lambda_m3.in lambda.r 200 1000.0 0
+./aleae lambda_m4.in lambda.r 200 1000.0 0
+./aleae lambda_m5.in lambda.r 200 1000.0 0
+./aleae lambda_m6.in lambda.r 200 1000.0 0
+./aleae lambda_m7.in lambda.r 200 1000.0 0
+./aleae lambda_m8.in lambda.r 200 1000.0 0
+./aleae lambda_m9.in lambda.r 200 1000.0 0 
+./aleae lambda_m10.in lambda.r 200 1000.0 0
