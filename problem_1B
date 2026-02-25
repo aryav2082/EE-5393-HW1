@@ -1,0 +1,24 @@
+import numpy as np
+state=np.array([9, 8, 7])
+trials=10000
+results=[]
+for i in range(trials):
+   s=state.copy()
+   for step in range(7):
+       a1=1*(0.5*s[0]*(s[0]-1)*s[1])
+       a2=2*(s[0]*s[2]*(s[2]-1))     
+       a3=3*(s[1]*s[2])                 
+      
+       total_a=a1+a2+a3
+       if total_a==0: break
+       r=np.random.rand()*total_a
+       if r<a1:
+           s+=[-2,-1,4]
+       elif r<a1+a2:
+           s+=[-1,3,-2]
+       else:
+           s+=[2,-1,-1]
+   results.append(s)
+results=np.array(results)
+print(f"Means: {np.mean(results, axis=0)}")
+print(f"Variances: {np.var(results, axis=0)}")
