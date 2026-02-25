@@ -1,0 +1,15 @@
+cd /Users/aryavshrivastava/Downloads/vanilla 
+
+cat <<EOF > prob1a.in
+X1 110 GE 150
+X2 26 LT 10
+X3 55 GT 100
+EOF
+
+cat <<EOF > prob1.r
+X1 2 X2 1 : X3 4 : 1.0
+X1 1 X3 2 : X2 3 : 2.0
+X2 1 X3 1 : X1 2 : 3.0
+EOF
+
+./aleae prob1a.in prob1.r 10000 -1 0
