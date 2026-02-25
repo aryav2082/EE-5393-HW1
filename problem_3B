@@ -1,0 +1,22 @@
+cat <<EOF > problem_b.r
+b 1 : a 1 b 1 : 1
+a 1 X 2 : c 1 Xp 1 a 1 : 100
+a 1 : W 1 : 10
+Xp 1 : X 1 : 100
+a 1 c 1 Y 1 : a 1 Y 2 c_done 1 : 1000
+c 1 : W 1 : 10
+c_done 1 : W 1 : 100
+EOF
+
+cat <<EOF > problem_b.in
+b 1 N
+a 0 N
+X 16 N
+Y 1 N
+c 0 N
+Xp 0 N
+c_done 0 N
+W 0 N
+EOF
+
+./aleae problem_b.in problem_b.r 50 2000.0 0
